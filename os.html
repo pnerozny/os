@@ -1,0 +1,200 @@
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Domine|Montserrat" rel="stylesheet"> 
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+    <!-- <script src="script.js"></script> -->
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>Operační systém a jeho funkce</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">body { font-family: Domine, Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif} h1, h2, h3, h4, h5, h6 { font-family: Montserrat, sans }</style>
+</head>
+<body>
+
+    
+    <div class="container mt-5">
+      <div class="row">
+            <div class="col-12">
+
+      
+      <h1 id="operační-systém-a-jeho-funkce">Operační systém a jeho
+funkce</h1>
+<ul>
+<li>operační systém je základní software počítače, stojí mezi hardwarem
+a aplikacemi</li>
+<li><strong>stará se o</strong> téměř všechny věci co ten počítač dělá -
+připojení k internetu, kreslení na obrazovku, ovládání procesoru a
+grafický karty, zapisování na disk …</li>
+<li>při <strong>spuštění</strong> počítače se automaticky zapne BIOS,
+kterej ne nainstalovanej v základový desce, a spustí operační systém,
+případně nabízí nějaký menu kdybys jich měl víc. Tomuto procesu se říká
+<strong>bootování</strong></li>
+<li>architektur, jak navrhnout operační systém je celá řada, je to věda,
+ale ta nejznámější architektura je UNIXová (je na ní postavenej MacOS i
+Linux)</li>
+<li>Každej operační systém musí dělat následující věci
+<ul>
+<li><strong>komunikace s hardware</strong>, na každý zařízení v počítači
+má speciální <strong>driver</strong>, česky ovladač, kterej nějakej
+požadavek (připoj se k wifi) převádí na konkrétní instrukce (jedničky a
+nuly) kterým tenhle konkrétní síťovej čip rozumí</li>
+<li><strong>spravuje procesy</strong> (proces je jeden bežící program,
+viz task manager)
+<ul>
+<li>procesum je přidělená nějaká paměť, maj prioritu atd atd</li>
+</ul></li>
+<li><strong>spravuje prostředky</strong> počítače - paměť, procesor,
+síť, přiděluje je procesům atd</li>
+<li>poskytuje <strong>knihovny</strong> pro základní funkce - když bys
+třeba programoval hru, tak jí nechceš psát tak, že řekneš ok, tak teď
+sáhni do paměti na tuhle adresu x8276D7, přečti 10B, pošli instrukci
+1001010 do processoru… Takovýhle funkce jsou předdefinovaný v
+systémovejch knihovnách, aby programátoři aplikací mohli psát spíš “a=5,
+b=10, vypočti <code>a*b</code>, nakresli tohle na displej”…<br />
+</li>
+<li><strong>API</strong> je programovací rozhraní toho počítače,
+basically standardizovanej způsob, jakym používáš ty věci v systémovejch
+knihovnách</li>
+<li><strong>Shell</strong> je základní způsob komunikace s počítačem.
+Ukáže se ti okýnko kam zadáš příkaz, třeba “ukaž mi všechny složky” a on
+to udělá. Shellů je spousta, na windows je to CMD a PowerShell, na
+Linuxu jsou jich kvanta, například Sh, Bash, já používám NuShell.</li>
+</ul></li>
+<li>Některý operační systémy můžou poskytovat i víc funkcí. Na Linuxu a
+jinejch dobrejch operačních systémech jsou tyhle funkce ve formě
+programů, který si můžeš normálně stáhnout a změnit a odinstalovat,
+Windows a MacOS maj většinu přednastavenou
+<ul>
+<li><strong>Grafické rozhraní</strong> - to na co klikáš myší, včetně
+plochy, grafickejch aplikací a tak. Počítač bez grafickýho rozhraní má
+jen textový rozhraní který vypadá jako cmd ve fullscreenu</li>
+<li>Sada <strong>defaultních aplikací</strong> - Microsof Edge,
+Prohlížeč souborů, Safari, Microsoft Store, …</li>
+</ul></li>
+<li>Všechny tyhle věci jsou dost modulární. Aplikace komunikuje se
+systémem kterej komunikuje s jádrem který komunikuje se základovou
+seskou pomocí nějakýho driveru. V Linuxu třeba jde vyměnit jádro, smazat
+driver atd… tyhle prvky se prostě staví na sebe až vznikne něco čemu se
+dá říkat moderní OS</li>
+<li><strong>základní operace</strong> v shellu:</li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 41%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Příkaz</th>
+<th>Windows</th>
+<th>Unix</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>vypiš název momentální složky</td>
+<td><code>&gt; cd</code></td>
+<td><code>$ pwd</code></td>
+</tr>
+<tr class="even">
+<td>vypiš všechny soubory v momentální složce</td>
+<td><code>&gt; dir</code></td>
+<td><code>$ ls</code></td>
+</tr>
+<tr class="odd">
+<td>nový prázdný soubor</td>
+<td><code>&gt; type nul &gt; newfile.txt</code></td>
+<td><code>$ touch newfile.txt</code></td>
+</tr>
+<tr class="even">
+<td>nová prázdná složka</td>
+<td><code>&gt; mkdir složka</code></td>
+<td><code>$ mkdir složka</code></td>
+</tr>
+<tr class="odd">
+<td>přesuň se do jiné složky</td>
+<td><code>&gt; cd path\to\folder\</code></td>
+<td><code>$ cd path/to/folder</code></td>
+</tr>
+<tr class="even">
+<td>vrať se do předchozí složky</td>
+<td><code>&gt; cd ..</code></td>
+<td><code>$ cd ..</code></td>
+</tr>
+<tr class="odd">
+<td>smaž soubor</td>
+<td><code>&gt; del "file.txt"</code></td>
+<td><code>$ rm file.txt</code></td>
+</tr>
+<tr class="even">
+<td>smaž složku</td>
+<td><code>&gt; rmdir path\to\folder</code></td>
+<td><code>$ rm -r path/to/folder</code></td>
+</tr>
+<tr class="odd">
+<td>pingni adresu</td>
+<td><code>&gt; ping google.com</code></td>
+<td><code>$ ping google.com</code></td>
+</tr>
+<tr class="even">
+<td>trasuj cestu k adrese</td>
+<td><code>&gt; tracert google.com</code></td>
+<td><code>$ traceroute google.com</code></td>
+</tr>
+<tr class="odd">
+<td>vytiskni text</td>
+<td><code>&gt; echo "něco"</code></td>
+<td><code>$ echo něco</code></td>
+</tr>
+<tr class="even">
+<td>zkopíruj soubor do</td>
+<td><code>&gt; copy path\to\file path\to\destination</code></td>
+<td><code>$ cp path/to/file /path/to/destination</code></td>
+</tr>
+</tbody>
+</table>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
